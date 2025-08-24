@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500;700&family=Noto+Serif+TC:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Zen+Maru+Gothic:wght@500&display=swap');
+    </style>
+    <link rel="stylesheet" href="WA_cookies.css">
+    <script type="text/javascript" src="WA_cookies.js"></script>
+    <title>WA Cookies</title>
+</head>
+
+<body onpageshow="bodyCookie()" ondblclick="disappear()">
+    <img src="img/WA_logo.png" class="left_top_logo" alt="左上logo">
+
+    <input maxlength="100" placeholder="找商品" class="searchBar">
+
+    <div class="container-fluid">
+        <div class="row content">
+            <!-- 左欄 -->
+            <div class="col-sm-2 sidenav">
+                <div class="page">
+                    <a href="#">全店商品｜熱銷排行</a>
+                </div>
+                
+                <div class="page">
+                    <a href="#">轉圈圈曲奇</a>
+                </div>
+                
+                <div class="page">
+                    <a href="#">NEW! 雪點曲奇球</a>
+                </div>
+               
+                <div class="page">
+                    <a href="#">古朗尼</a>
+                </div>
+                
+                <div class="page">
+                    <a href="#">雙餡夾心餅乾</a>
+                </div>
+                
+                <div class="page">
+                    <a href="#">冷藏專區</a>
+                </div>
+                
+                <div class="page">
+                    <a href="#">彌月禮盒</a>
+                </div>
+                
+                <div class="page">
+                    <a href="#">喜餅禮盒 / 婚禮小物</a>
+                </div>
+                
+                <div class="page">
+                    <a href="#">企業福委 / 大量送禮</a>
+                </div>
+                
+                <div class="page">
+                    <a href="#">門市據點</a>
+                </div>
+                
+                <div class="page">
+                    <a href="#">購買須知 FAQ</a>
+                </div>
+                
+                <div class="page">
+                    <a href="#">品牌資訊</a>
+                </div>
+
+                <div class="page">
+                    <a href="#">會員制度</a>
+                </div>
+                
+                <div class="page_logIn">
+                    <a href="#">會員登入</a>
+                </div>
+
+                <div class="page_contact">
+                    <a href="#">聯絡我們</a>
+                </div>
+            </div>
+        </div>
+
+        <img src="img/cookie_cover.png" class="top_cover" alt="首頁大圖">
+
+        <p class="top_popular">全部商品 / 全店商品｜熱銷排行</p>
+
+        <p class="allPop">全店商品｜熱銷排行</p>
+
+<!-- 商品列 -->
+        <div class="product-container--wrapper">
+            <!-- 1 -->
+            <div class="item" value="0">
+                <img src="img/轉圈圈曲奇-原味_焦糖奶油.png" class="pro_img">
+                <div class="txt">
+                    <p>轉圈圈曲奇-原味_焦糖奶油［常溫］</p>
+                </div>
+                <button class="like" id="like_0">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <p class="price"><b>NT$430</b></p>
+                <button class="cart" id="轉圈圈曲奇-原味_焦糖奶油" price="430"><p>加入購物車</p></button>
+            </div>
+            <!-- 2 -->
+            <div class="item" value="1">
+                <img src="img/雲朵奶蓋曲奇-法芙娜可可.png" class="pro_img">
+                <div class="txt">
+                    <p>雲朵奶蓋曲奇-法芙娜可可［常溫］</p>
+                </div>
+                <button class="like" id="like_1">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <p class="price"><b>NT$470</b></p>
+                <button class="cart" id="雲朵奶蓋曲奇-法芙娜可可" price="470"><p>加入購物車</p></button>
+            </div>
+            <!-- 3 -->
+            <div class="item" value="2">
+                <img src="img/雲朵麻糬古朗尼-海鹽可可.png" class="pro_img">
+                <div class="txt">
+                    <p>雲朵麻糬古朗尼-海鹽可可［常溫］</p>
+                </div>
+                <button class="like" id="like_2">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <p class="price"><b>NT$450</b></p>
+                <button class="cart" id="雲朵麻糬古朗尼-海鹽可可" price="450"><p>加入購物車</p></button>
+            </div>
+            <!-- 4 -->
+            <div class="item" value="3">
+                <img src="img/轉圈圈曲奇-重可可.png" class="pro_img">
+                <div class="txt">
+                    <p>轉圈圈曲奇-重可可［常溫］</p>
+                </div>
+                <button class="like" id="like_3">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <p class="price"><b>NT$430</b></p>
+                <button class="cart" id="轉圈圈曲奇-重可可" price="430"><p>加入購物車</p></button>
+            </div>
+            <!-- 5 -->
+            <div class="item" value="4">
+                <img src="img/雙層綜合曲奇-減甜款(重可可-靜岡抹茶).png" class="pro_img">
+                <div class="txt">
+                    <p>雙層綜合曲奇-減甜款(重可可/靜岡抹茶)［常溫］</p>
+                </div>
+                <button class="like" id="like_4">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <p class="price"><b>NT$620</b></p>
+                <button class="cart" id="雙層綜合曲奇-減甜款(重可可-靜岡抹茶)" price="620"><p>加入購物車</p></button>
+            </div>
+            <!-- 6 -->
+            <div class="item" value="5">
+                <img src="img/雙層綜合曲奇-雙茶款(鐵觀音濃茶-阿薩姆紅茶拿鐵).png" class="pro_img">
+                <div class="txt">
+                    <p>雙層綜合曲奇-雙茶款(鐵觀音濃茶/阿薩姆紅茶拿鐵)［常溫］</p>
+                </div>
+                <button class="like" id="like_5">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <p class="price"><b>NT$620</b></p>
+                <button class="cart" id="雙層綜合曲奇-雙茶款(鐵觀音濃茶-阿薩姆紅茶拿鐵)" price="620"><p>加入購物車</p></button>
+            </div>
+            <!-- 7 -->
+            <div class="item" value="6">
+                <img src="img/轉圈圈曲奇-深焙咖啡.png" class="pro_img">
+                <div class="txt">
+                    <p>轉圈圈曲奇-深焙咖啡［常溫］</p>
+                </div>
+                <button class="like" id="like_6">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <p class="price"><b>NT$430</b></p>
+                <button class="cart" id="轉圈圈曲奇-深焙咖啡" price="430"><p>加入購物車</p></button>
+            </div>
+            <!-- 8 -->
+            <div class="item" value="7">
+                <img src="img/轉圈圈曲奇-阿薩姆紅茶拿鐵.png" class="pro_img">
+                <div class="txt">
+                    <p>轉圈圈曲奇-阿薩姆紅茶拿鐵［常溫］</p>
+                </div>
+                <button class="like" id="like_7">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <p class="price"><b>NT$430</b></p>
+                <button class="cart" id="轉圈圈曲奇-阿薩姆紅茶拿鐵" price="430"><p>加入購物車</p></button>
+            </div>
+            <!-- 9 -->
+            <div class="item" value="8">
+                <img src="img/轉圈圈曲奇-伯爵茶拿鐵.png" class="pro_img">
+                <div class="txt">
+                    <p>轉圈圈曲奇-伯爵茶拿鐵［常溫］</p>
+                </div>
+                <button class="like" id="like_8">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <p class="price"><b>NT$430</b></p>
+                <button class="cart" id="轉圈圈曲奇-伯爵茶拿鐵" price="430"><p>加入購物車</p></button>
+            </div>
+
+            <!-- 10 -->
+            <div class="item" value="9">
+                <img src="img/森蘊彌月禮盒-重可可.png" class="pro_img">
+                <div class="txt">
+                    <p>森蘊彌月禮盒-重可可［常溫］</p>
+                </div>
+                <button class="like" id="like_9">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <p class="price"><b>NT$455</b></p>
+                <button class="cart" id="森蘊彌月禮盒-重可可" price="455"><p>加入購物車</p></button>
+            </div>
+            <!-- 11 -->
+            <div class="item" value="10">
+                <img src="img/森蘊彌月禮盒-原味_焦糖奶油.png" class="pro_img">
+                <div class="txt">
+                    <p>森蘊彌月禮盒-原味_焦糖奶油［常溫］</p>
+                </div>
+                <button class="like" id="like_10">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <p class="price"><b>NT$455</b></p>
+                <button class="cart" id="森蘊彌月禮盒-原味_焦糖奶油" price="455"><p>加入購物車</p></button>
+            </div>
+            <!-- 12 -->
+            <div class="item" value="11">
+                <img src="img/WA!經典熱銷組(原味奶油-重可可).png" class="pro_img">
+                <div class="txt">
+                    <p>WA! 經典熱銷組 (原味奶油/重可可)［常溫］</p>
+                </div>
+                <button class="like" id="like_11">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <p class="price"><b>NT$840</b></p>
+                <button class="cart" id="WA!經典熱銷組(原味奶油-重可可)" price="840"><p>加入購物車</p></button>
+            </div>
+
+            <!-- 13 -->
+            <div class="item" value="12">
+                <img src="img/曲奇球經典分享組(起司-紅烏龍-焦糖).png" class="pro_img">
+                <div class="txt">
+                    <p>曲奇球經典分享組 (起司/紅烏龍/焦糖)［常溫］</p>
+                </div>
+                <button class="like" id="like_12">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <p class="price"><b>NT$1,349</b></p>
+                <button class="cart" id="曲奇球經典分享組(起司-紅烏龍-焦糖)" price="1349"><p>加入購物車</p></button>
+            </div>
+            <!-- 14 -->
+            <div class="item" value="13">
+                <img src="img/雪點曲奇球-紅烏龍杏仁可可.png" class="pro_img">
+                <div class="txt">
+                    <p>雪點曲奇球-紅烏龍杏仁可可［常溫］</p>
+                </div>
+                <button class="like" id="like_13">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <p class="price"><b>NT$450</b></p>
+                <button class="cart" id="雪點曲奇球-紅烏龍杏仁可可" price="450"><p>加入購物車</p></button>
+            </div>
+            <!-- 15 -->
+            <div class="item" value="14">
+                <img src="img/雪點曲奇球-依思尼熔岩焦糖.png" class="pro_img">
+                <div class="txt">
+                    <p>雪點曲奇球-依思尼熔岩焦糖［常溫］</p>
+                </div>
+                <button class="like" id="like_14">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <p class="price"><b>NT$470</b></p>
+                <button class="cart" id="雪點曲奇球-依思尼熔岩焦糖" price="470"><p>加入購物車</p></button>
+            </div>
+
+        </div>
+    <!-- 下面的是container-fluid的div -->
+    </div>
+
+    <div class="howMany" onclick="displayChosen()">
+        <img src="img/icons8-shopping-bag-24.png">&nbsp;<p id="number">0</p><p class="howMany_products">件商品</p>
+    </div>
+
+    <p class="no_products">購物車內沒有商品</p>
+
+    <div class="showChosen">
+        <p id="products-chosen"></p>
+        <button class="toCheckOut" onclick="location.href='WA_cart.html'"><p>訂單結帳</p></button>
+    </div>
+    
+</body>
