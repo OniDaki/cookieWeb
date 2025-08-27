@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+}
+
+.left_top_logo{
+    width: 84px;
+    height: 84px;
+    position: fixed;
+    top: 25px;
+    left: 30px;
+}
+
+.searchBar{
+    font-family: "Noto Serif TC", serif;
+    font-optical-sizing: auto;
+    font-weight: 200px;
+    font-style: normal;
+    box-sizing: border-box;
+    color: inherit;
+    margin: 0;
+    line-height: inherit;
+    height: 27px;
+    vertical-align: middle;
+    border-radius: 0;
+    width: 15%;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: solid 0.5px #000000;
+    position: fixed;
+    top: 135px;
+    left: 30px;
+}
+
+.container-fluid{
+    /* margin-top: -170px !important; */
+    margin-left: 10px !important;
+}
+
+.sidenav{
+    font-family: "Noto Serif TC", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    position: fixed;
+    top: 175px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 200px;
+    line-height: 40px;
+}
+.sidenav a{
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    padding: 10px;
+}
+.sidenav a:after{
+    text-decoration: line-through #9d7b6fa0 solid 3px;
+}
+
+.page_logIn, .page_contact{
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.checkout-nav{
+    position: absolute;
+    top: 10px;
+    left: 400px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.step{
+    line-height: 1.42857143;
+    font-size: 14px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: "Lora", "Noto Serif TC", "Noto Serif SC", "Athiti", serif;
+    display: inline-block;
+    vertical-align: top;
+    width: 240px;
+    max-width: 33%;
+    margin-left: -2px;
+    margin-right: -2px;
+    color: black;
+}
+
+.text{
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    line-height: 40px;
+    box-sizing: border-box;
+    font-family: "Lora", "Noto Serif TC", "Noto Serif SC", "Athiti", serif;
+    display: block;
+    padding: 0 5px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.badge, .badge_accept{
+    box-sizing: border-box;
+    font-family: "Lora", "Noto Serif TC", "Noto Serif SC", "Athiti", serif;
+    min-width: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 50px;
+    display: block;
+    position: relative;
+    left: 100px;
+    background-color: #cccccc;
+    width: 40px;
+    height: 40px;
+    line-height: 50px;
+    padding: 0;
+}
+
+.checkout-nav .step::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    top: -20px;
+    bottom: 0;
+    left: 140px;
+    margin: auto;
+    background-color: #cccccc;
+}
+
+.howManyinCart{
+    font-family: "Noto Serif TC", serif;
+    font-optical-sizing: auto;
+    font-weight: 200px;
+    font-style: normal;
+    position: absolute;
+    left: 300px;
+    top: 300px;
+    width: 1150px;
+    border: solid 1px #cccccc;
+    padding: 10px 20px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.howManyCart .shoppingCart #number{
+    display: flex;
+}
+.shoppingCart{
+    font-size: 20px;
+}
+
+.small_title{
+    display: flex;
+    margin-bottom: 10px;
+    border-bottom: solid 1px #cccccc;
+}
+
+.prodImg{
+    width: 58.5px;
+    height: 58.5px;
+    position: relative;
+    top: -10px;
+}
+.prodName{
+    position: absolute;
+    top: 65px;
+    left: 20px;
+}
+.discount{
+    position: absolute;
+    top: 65px;
+    left: 400px;
+}
+.prodPrice{
+    position: absolute;
+    top: 65px;
+    left: 550px;
+}
+.prodNum{
+    position: absolute;
+    top: 65px;
+    left: 750px;
+}
+.addUp{
+    position: absolute;
+    top: 65px;
+    left: 950px;
+}
+
+.cartItem0{
+    position: relative;
+    top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    border-bottom: solid 1px #cccccc;
+}
+
+.itemsName{
+    font-size: 15px;
+    margin-left: 15px;
+    padding-top: 8px;
+}
+.price{
+    display: flex;
+    position: absolute;
+    left: 530px;
+    padding-top: 0px;
+}
+.more-or-less{
+    position: absolute;
+    left: 710px;
+    display: flex;
+}
+.howMany{
+    border-top: solid 1px #cccccc;
+    border-bottom: solid 1px #cccccc;
+    width: 70px;
+    height: 30px;
+    padding-left: 30px;
+}
+
+.delete-one-item{
+    border: solid 1px #cccccc;
+    margin-left: -30px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+}
+
+.add-one-item{
+    border: solid 1px #cccccc;
+    width: 30px;
+    height: 30px;
+    margin-left: 0px;
+    background-color: transparent;
+}
+
+.delete-item{
+    border: none;
+    margin-left: 10px;
+    background-color: transparent;
+    position: absolute;
+    left: 1050px;
+}
+
+.back_shopping{
+    font-family: "Noto Serif TC", serif;
+    font-optical-sizing: auto;
+    font-weight: 200px;
+    font-style: normal;
+    color: #000000;
+    text-decoration: underline #000000;
+    position: relative;
+    top: 40px;
+    left: 980px;
+}
+
+.proTotal{
+    display: flex;
+    position: absolute;
+    left: 920px;
+    padding-top: 0px;
+}
+
+.wantNoShipping{
+    display: flex;
+}
+.noShipping{
+    position: absolute;
+    left: 80px;
+    padding-top: 40px;
+}
+.noShippingFee{
+    position: absolute;
+    left: 280px;
+    padding-top: 40px;
+    color: #29a329;
+}
+.howMuchLeft{
+    position: absolute;
+    left: 350px;
+    padding-top: 40px;
+    color: #29a329;
+}
+
+.calTotal{
+    font-family: "Noto Serif TC", serif;
+    font-optical-sizing: auto;
+    font-weight: 200px;
+    font-style: normal;
+    position: absolute;
+    left: 1050px;
+    top: 750px;
+    width: 400px;
+    height: 450px;
+    border: solid 1px #cccccc;
+    padding: 10px 20px;
+    padding-top: 20px;
+}
+
+.order_info{
+    font-size: 20px;
+    padding-bottom: 15px;
+    border-bottom: solid 1px #cccccc;
+}
+.total{
+    position: relative;
+    left: 5px;
+    top: 10px;
+}
+.shipping_fee{
+    position: relative;
+    left: 5px;
+    top: -20px;
+}
+.moneyTotal{
+    position: relative;
+    left: 250px;
+    top: -30px;
+}
+.calTotalPrice{
+    position: relative;
+    left: 290px;
+    top: -70px;
+}
+.shippingFee{
+    position: absolute;
+    left: 310px;
+    top: 168px;
+}
+.moneyShipping{
+    position: relative;
+    left: 250px;
+    top: -60px;
+}
+.totalAddShipping{
+    position: relative;
+    left: 290px;
+    top: -70px;
+}
+
+.addUpTotal{
+    position: relative;
+    left: 5px;
+    top: 10px;
+    border-top: solid 1px #cccccc;
+    padding-top: 20px;
+}
+.totalMoney{
+    position: relative;
+    left: 250px;
+    top: -30px;
+}
+
+.toCheckOut{
+    position: relative;
+    margin-bottom: 10px;
+    top: -50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 300px;
+    border: none;
+    background-color: #3ba33b;
+    border-radius: 5px;
+}
+
+.toCheckOut p{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 200px;
+    font-style: normal;
+    font-size: 15px;
+    margin-top: 13px;
+    color: white;
+}
+
+.wayToShipCheckOut{
+    font-family: "Noto Serif TC", serif;
+    font-optical-sizing: auto;
+    font-weight: 200px;
+    font-style: normal;
+    position: absolute;
+    left: 300px;
+    top: 750px;
+    width: 700px;
+    height: 460px;
+    border: solid 1px #cccccc;
+    padding: 10px 20px;
+    padding-top: 20px;
+}
+
+.chooseTheWay{
+    font-size: 20px;
+    padding-bottom: 15px;
+    border-bottom: solid 1px #cccccc;
+}
+
+.shipWhere{
+    position: relative;
+    left: 5px;
+    top: 10px;
+}
+.shipDes{
+    position: relative;
+    left: 5px;
+    width: 650px;
+    height: 40px;
+}
+
+.shipWay{
+    position: relative;
+    left: 5px;
+    top: 10px;
+}
+.chooseShipWay{
+    position: relative;
+    left: 5px;
+    width: 650px;
+    height: 40px;
+}
+
+ul.remember li{
+    list-style-type: disc;
+    color: #ff0000;
+    line-height: 25px;
+    position: relative;
+    left: -10px;
+    padding-top: 5px;
+}
+ul.warn li{
+    list-style-type: disc;
+    color: #ff0000;
+    position: relative;
+    left: -10px;
+    padding-top: 5px;
+}
+
+.payWay{
+    position: relative;
+    left: 5px;
+    top: 10px;
+}
+.choosePayWay{
+    position: relative;
+    left: 5px;
+    width: 650px;
+    height: 40px;
+}

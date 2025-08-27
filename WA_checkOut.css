@@ -1,0 +1,464 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+}
+
+.left_top_logo{
+    width: 84px;
+    height: 84px;
+    position: fixed;
+    top: 25px;
+    left: 30px;
+}
+
+.searchBar{
+    font-family: "Noto Serif TC", serif;
+    font-optical-sizing: auto;
+    font-weight: 200px;
+    font-style: normal;
+    box-sizing: border-box;
+    color: inherit;
+    margin: 0;
+    line-height: inherit;
+    height: 27px;
+    vertical-align: middle;
+    border-radius: 0;
+    width: 15%;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: solid 0.5px #000000;
+    position: fixed;
+    top: 135px;
+    left: 30px;
+}
+
+.container-fluid{
+    /* margin-top: -170px !important; */
+    margin-left: 10px !important;
+}
+
+.sidenav{
+    font-family: "Noto Serif TC", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    position: fixed;
+    top: 175px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 200px;
+    line-height: 40px;
+}
+.sidenav a{
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    padding: 10px;
+}
+.sidenav a:after{
+    text-decoration: line-through #9d7b6fa0 solid 3px;
+}
+
+.page_logIn, .page_contact{
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.checkout-nav{
+    position: absolute;
+    top: 10px;
+    left: 400px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.step{
+    line-height: 1.42857143;
+    font-size: 14px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: "Lora", "Noto Serif TC", "Noto Serif SC", "Athiti", serif;
+    display: inline-block;
+    vertical-align: top;
+    width: 240px;
+    max-width: 33%;
+    margin-left: -2px;
+    margin-right: -2px;
+    color: black;
+}
+
+.text{
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    line-height: 40px;
+    box-sizing: border-box;
+    font-family: "Lora", "Noto Serif TC", "Noto Serif SC", "Athiti", serif;
+    display: block;
+    padding: 0 5px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.badge, .badge_accept{
+    box-sizing: border-box;
+    font-family: "Lora", "Noto Serif TC", "Noto Serif SC", "Athiti", serif;
+    min-width: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 50px;
+    display: block;
+    position: relative;
+    left: 100px;
+    background-color: #cccccc;
+    width: 40px;
+    height: 40px;
+    line-height: 50px;
+    padding: 0;
+}
+
+.checkout-nav .step::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    top: -20px;
+    bottom: 0;
+    left: 140px;
+    margin: auto;
+    background-color: #cccccc;
+}
+
+.howManyinCart{
+    font-family: "Noto Serif TC", serif;
+    font-optical-sizing: auto;
+    font-weight: 200px;
+    font-style: normal;
+    position: absolute;
+    left: 300px;
+    top: 200px;
+    width: 1100px;
+    height: 120px;
+    border: solid 1px #cccccc;
+    padding: 10px 20px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.shoppingCart{
+    display: flex;
+    font-size: 16px;
+    position: relative;
+    left: 460px;
+    top: 60px;
+}
+
+.calTotalPrice{
+    position: relative;
+    left: 545px;
+    top: -112px;
+    font-size: 20px;
+    font-weight: 200px;
+}
+
+.addUpTotal, .calTotalPrice{
+    display: flex;
+}
+
+.addUpTotal{
+    position: relative;
+    left: 430px;
+    top: -20px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.totalMoney{
+    position: relative;
+    left: 500px;
+    top: -65px;
+    font-size: 20px;
+}
+
+.discount{
+    position: absolute;
+    top: 65px;
+    left: 400px;
+}
+.prodPrice{
+    position: absolute;
+    top: 65px;
+    left: 550px;
+}
+.prodNum{
+    position: absolute;
+    top: 65px;
+    left: 750px;
+}
+.addUp{
+    position: absolute;
+    top: 65px;
+    left: 950px;
+}
+
+.price{
+    display: flex;
+    position: absolute;
+    left: 530px;
+    padding-top: 0px;
+}
+.more-or-less{
+    position: absolute;
+    left: 710px;
+    display: flex;
+}
+.howMany{
+    border-top: solid 1px #cccccc;
+    
+    width: 70px;
+    height: 30px;
+    padding-left: 30px;
+}
+
+.delete-one-item{
+    border: solid 1px #cccccc;
+    margin-left: -30px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+}
+
+.add-one-item{
+    border: solid 1px #cccccc;
+    width: 30px;
+    height: 30px;
+    margin-left: 0px;
+    background-color: transparent;
+}
+
+.delete-item{
+    border: none;
+    margin-left: 10px;
+    background-color: transparent;
+    position: absolute;
+    left: 1050px;
+}
+
+.back_shopping{
+    font-family: "Noto Serif TC", serif;
+    font-optical-sizing: auto;
+    font-weight: 200px;
+    font-style: normal;
+    color: #000000;
+    text-decoration: underline #000000;
+    position: relative;
+    top: 40px;
+    left: 980px;
+}
+
+.proTotal{
+    display: flex;
+    position: absolute;
+    left: 920px;
+    padding-top: 0px;
+}
+
+.wantNoShipping{
+    display: flex;
+}
+.noShipping{
+    position: absolute;
+    left: 80px;
+    padding-top: 40px;
+}
+.noShippingFee{
+    position: absolute;
+    left: 280px;
+    padding-top: 40px;
+    color: #29a329;
+}
+.howMuchLeft{
+    position: absolute;
+    left: 350px;
+    padding-top: 40px;
+    color: #29a329;
+}
+
+.personalInfo{
+    font-family: "Noto Serif TC", serif;
+    font-optical-sizing: auto;
+    font-weight: 200px;
+    font-style: normal;
+    position: absolute;
+    left: 300px;
+    top: 400px;
+    width: 500px;
+    height: 500px;
+    border: solid 1px #cccccc;
+    padding: 10px 20px;
+    padding-top: 15px;
+}
+
+.customer_info{
+    font-size: 20px;
+    padding-bottom: 15px;
+    border-bottom: solid 1px #cccccc;
+}
+
+.two_buttons{
+    padding-bottom: 20px;
+}
+
+.logIn{
+    border: none;
+    background-color: #33cc33;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    color: #fff;
+}
+.fb_logIn{
+    border: none;
+    background-color: #039be5;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    color: #fff;
+    position: relative;
+    top: -3px;
+    left: 20px;
+}
+.fb_logIn img{
+    width: 36px;
+    height: 36px;
+    position: relative;
+    top: -5px;
+    left: -50px;
+}
+
+.notice{
+    color: #ff0000;
+}
+
+.total{
+    position: relative;
+    left: 5px;
+    top: 10px;
+}
+
+.moneyTotal{
+    position: relative;
+    left: 250px;
+    top: -30px;
+}
+
+.remark{
+    font-family: "Noto Serif TC", serif;
+    font-optical-sizing: auto;
+    font-weight: 200px;
+    font-style: normal;
+    position: absolute;
+    left: 300px;
+    top: 950px;
+    width: 500px;
+    height: 200px;
+    border: solid 1px #cccccc;
+    padding: 10px 20px;
+    padding-top: 15px;
+}
+.order_remark{
+    font-size: 20px;
+    padding-bottom: 15px;
+    border-bottom: solid 1px #cccccc;
+}
+.remark input{
+    height: 120px;
+    width: 450px;
+}
+
+.shipping_info{
+    font-family: "Noto Serif TC", serif;
+    font-optical-sizing: auto;
+    font-weight: 200px;
+    font-style: normal;
+    position: absolute;
+    left: 900px;
+    top: 400px;
+    width: 500px;
+    height: 500px;
+    border: solid 1px #cccccc;
+    padding: 10px 20px;
+    padding-top: 15px;
+}
+.shippingInfo{
+    font-size: 20px;
+    padding-bottom: 15px;
+    border-bottom: solid 1px #cccccc;
+}
+.if_theSame input{
+    position: relative;
+    top: -80px;
+}
+
+.if_theSame label{
+    position: relative;
+    top: -80px;
+}
+
+.who_receive{
+    position: relative;
+    top: -70px;
+}
+
+.who_phone{
+    position: relative;
+    top: -65px;
+    padding-bottom: 15px;
+    border-bottom: solid 1px #cccccc;
+}
+
+.shipping_fee{
+    position: relative;
+    left: 300px;
+    top: -45px;
+}
+.shippingFee{
+    position: absolute;
+    left: 405px;
+    top: 18px;
+}
+.moneyShipping{
+    position: relative;
+    left: 350px;
+    top: -85px;
+}
+.totalAddShipping{
+    position: relative;
+    left: 100px;
+    top: -70px;
+}
+
+.shippingWay{
+    position: relative;
+    top: -80px;
+}
